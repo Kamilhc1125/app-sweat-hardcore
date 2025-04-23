@@ -2,9 +2,8 @@ import { VideoList } from '@/components/videos';
 import { Footer, Header, Modal, Preloader } from '@/components/ui';
 import { Hero, Gear, Photos, Bands } from '@/components/main';
 import { GenresList } from '@/components/genres';
-import { Test, Test2, Test3, Debug } from '@/components/test';
+import { Test, Test2, Debug } from '@/components/test';
 import { useEffect, useState } from 'react';
-import { Skull } from './components/main';
 
 function App() {
 
