@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from 'react';
 import { Heading } from "@/components/ui";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -15,7 +16,21 @@ const Bands = () => {
     autoplaySpeed: 1500,
     cssEase: "ease-in-out",
     slidesToShow: 5,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 4
+        }
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 3
+        }
+      }
+    ]
   };
 
   return (

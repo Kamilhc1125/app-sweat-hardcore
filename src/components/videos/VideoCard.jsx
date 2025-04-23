@@ -7,7 +7,7 @@ const VideoCard = ({ video, lastVideo }) => {
   return (
 
     <div
-      className="card bg-neutral w-96 sm:w-96 md:w-80 lg:w-full shadow-2xl hover:opacity-85 cursor-pointer transition-transform duration-300 hover:scale-110 sh-border-animated"
+      className="card bg-neutral w-80 sm:w-96 md:w-80 lg:w-full shadow-2xl hover:opacity-85 cursor-pointer transition-transform duration-300 hover:scale-110 sh-border-animated"
       onClick={() => handleLink(link)}
       // style={{ boxShadow: '2px 2px 2px gray' }}
     >

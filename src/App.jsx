@@ -17,7 +17,7 @@ function App() {
   })
 
   return (
-    <div className='min-h-screen items-center'>
+    <div className='min-h-screen items-center m-0 p-0'>
       {isLoading ? <Preloader loadingTime={loadingTime} /> : (
         <>
           <Header />

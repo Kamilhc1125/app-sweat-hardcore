@@ -7,7 +7,7 @@ const GenresCard = ({ genre }) => {
   return (
 
     <div 
-      className="w-96 md:w-60 lg:w-80 h-80 md:h-60 lg:h-80 relative flex items-center justify-center bg-neutral rounded-xl overflow-hidden group shadow-lg font-bangers sh-border-animated "
+      className="w-80 h-80 md:w-60 md:h-60 lg:w-80 lg:h-80 relative flex items-center justify-center bg-neutral rounded-xl overflow-hidden group shadow-lg font-bangers sh-border-animated "
     >
       <div 
         className="relative flex items-center justify-center w-full"
