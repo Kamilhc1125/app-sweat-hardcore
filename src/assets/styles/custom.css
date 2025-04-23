@@ -1,0 +1,87 @@
+@font-face {
+  font-family: 'RoadRage';
+  src: url('/fonts/Road_Rage.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bangers';
+  src: url('/fonts/Bangers-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* MAIN */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+/* ::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(103, 27, 27);
+}
+
+::-webkit-scrollbar-thumb {
+  background: red;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: red;
+} */
+
+/* SWEAT HARDCORE UTILITY CLASSES */
+
+.font-hardcore {
+  font-family: RoadRage;
+}
+
+.font-bangers {
+  font-family: Bangers;
+}
+
+
+
+.sh-hover-transition {
+  @apply transition-opacity duration-300 ease-in-out hover:opacity-70;
+}
+
+.sh-border-animated {
+  border: 2px solid #0000;
+  border-radius: 12px;
+  background: linear-gradient(155deg, #000000 60%, #333333) padding-box, linear-gradient(var(--angle),
+      #070707,
+      #ff0000) border-box;
+  animation: 8s rotate linear infinite;
+}
+
+.sh-react-logo {
+  animation: react-logo-spin infinite 20s linear;
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes react-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
