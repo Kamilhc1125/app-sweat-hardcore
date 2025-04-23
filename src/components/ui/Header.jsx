@@ -1,5 +1,5 @@
-import { FaLinkedin, FaFacebook } from "react-icons/fa";
-import { socialLinks } from '@/constants';
+import { FaLinkedin, FaFacebook, FaGithub } from "react-icons/fa";
+import { socialMedia } from '@/constants';
 import NavLinks from './NavLinks';
 
 import { imgLogo } from '@/assets/images';
@@ -10,7 +10,7 @@ const Header = () => {
 
   const { isOpen, toggle, open, close } = useToggle();
 
-  const { facebook, linkedIn } = socialLinks;
+  // const { facebook, linkedIn, github } = socialLinks;
 
   return (
     <div className="navbar sticky top-0 z-50 h-[64px] bg-black">
@@ -42,13 +42,12 @@ const Header = () => {
         </ul>
       </div>
       <div className="relative navbar-end flex flex-row gap-4 items-center pr-6">
-        <a href={facebook} target='_blank' className="z-20">
-          <FaFacebook className='text-3xl hover:text-accent hover:cursor-pointer' />
-        </a>
-        <a href={linkedIn} target='_blank' className="z-20">
-          <FaLinkedin className='text-3xl hover:text-accent hover:cursor-pointer' />
-        </a>
-        <div className="absolute -top-30 right-3 w-28 flex items-center justify-center rounded-lg z-0">
+        {socialMedia.map((item, index) => (
+          <a href={item.link} target='_blank' className="z-20" key={index}>
+            {<item.icon className='text-3xl hover:text-accent hover:cursor-pointer' />}
+          </a>
+        ))}
+        <div className="absolute -top-30 right-8 w-28 flex items-center justify-center rounded-lg z-0">
           <img src={imgFire11} />
         </div> 
       </div>

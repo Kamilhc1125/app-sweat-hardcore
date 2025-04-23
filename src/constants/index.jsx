@@ -8,10 +8,25 @@ export const videoOrder = 'desc';
 
 export const videoCount = 20;
 
-export const socialLinks = {
-  'linkedIn': 'https://www.linkedin.com/in/kamil-malaszewicz/',
-  'facebook': 'https://www.facebook.com/SweatHardcore/'
-};
+import { FaLinkedin, FaFacebook, FaGithub } from "react-icons/fa";
+
+export const socialMedia = [
+  {
+    name: 'linkedin',
+    link: 'https://www.linkedin.com/in/kamil-malaszewicz/',
+    icon: (props) => <FaLinkedin {...props} />
+  },
+  {
+    name: 'github',
+    link: 'https://github.com/Kamilhc1125/',
+    icon: (props) => <FaGithub {...props} />
+  },
+  {
+    name: 'facebook',
+    link: 'https://www.facebook.com/SweatHardcore/',
+    icon: (props) => <FaFacebook {...props} />
+  }
+]
 
 export const navLinks = [
   {
